@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 public class UppercaseGUI extends Application{
 	
-	String version = "1.0";
+	String version = "1.1";
 	
 	private static TextArea text;
 	private static TextArea output;
@@ -60,7 +60,32 @@ public class UppercaseGUI extends Application{
 			
 			output.setText(sb.toString());
 			if(timespressed == 5){
+				s.setTitle("Stop.");
+			}
+			if(timespressed == 10){
+				s.setTitle("Just stop it.");
+			}
+			if(timespressed == 20){
 				s.setTitle("Just stop it. End yourself.");
+			}
+			if(timespressed == 30){
+				s.setTitle("*internal screaming*");
+			}
+			if(timespressed == 50){
+				s.setTitle("*POKES BACK*");
+			}
+			if(timespressed == 75){
+				s.setTitle("2,147,483,647");
+			}
+			if(timespressed == 100){
+				s.setTitle("***PROGRAM STRIKES BACK***");
+			}
+			if(timespressed == 125){
+				s.setTitle("*loud explosion*");
+			}
+			if(timespressed == 126){
+				s.setTitle("*whistles innocently*");
+				timespressed = 0;
 			}
 			});
 		layout.getChildren().add(justdoitlmao);
