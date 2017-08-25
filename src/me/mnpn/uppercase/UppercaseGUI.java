@@ -55,7 +55,7 @@ public class UppercaseGUI extends Application {
 
 	public void start(Stage s) {
 		s.setTitle("UppercasE " + version);
-		s.getIcons().add(new Image("file:icon.png")); // Use "file:res/icon.png" during development, but when you export you need to modify this for the icon to work.
+		s.getIcons().add(new Image("/icon.png"));
 
 		VBox layout = new VBox();
 		HBox input = new HBox();
